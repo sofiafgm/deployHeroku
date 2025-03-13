@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 // Reemplaza 'nombre-del-proyecto' con el nombre de tu carpeta de build en /dist
-const appName = 'nombre-del-proyecto';
+const appName = 'frontend';
 app.use(express.static(__dirname + `/dist/${appName}`));
 
 app.get('/*', function(req, res) {
